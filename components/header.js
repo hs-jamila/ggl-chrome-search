@@ -36,7 +36,8 @@ function Header(){
                            <input ref={searchInputRef} 
                                   type="text" 
                                   placeholder="Search Google" 
-                                  className="flex-grow w-full focus:outline-none"/>
+                                  className="flex-grow w-full focus:outline-none"
+                                  defaultValue={router.query.term}/>
                            <XIcon className=" h-7 w-5 sm:mr-3 text-gray-500 transition duration-100 transform hover:scale-125"
                                   onClick={ClearText}/>
                            <SearchIcon className=" h-5 w-5 mr-3 hidden sm:inline-flex border-l-2 border-gray-300 text-blue-500"/>
